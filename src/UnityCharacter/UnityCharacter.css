@@ -1,0 +1,14 @@
+.btn {
+    height: auto;
+    width: 100%;
+    font-size: small;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+#unity-canvas {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

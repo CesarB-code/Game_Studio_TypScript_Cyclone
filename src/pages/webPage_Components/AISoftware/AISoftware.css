@@ -1,0 +1,40 @@
+#cardRow {
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: transparent;
+}
+
+#cardRow::-webkit-scrollbar {
+    background-color: transparent;
+    height: 10px;
+
+}
+
+#cardRow::-webkit-scrollbar-thumb {
+    background-color: #F2a3a8;
+    border-radius: 5px;
+}
+
+#ContentRow {
+    margin: 0px;
+}
+
+#AITitle {
+    color: white;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px black;
+}
+
+#cardRow:hover {
+    border-color: #F1535d;
+    border-width: 5px;
+    border-style: solid;
+    transition: 0.3s;
+}

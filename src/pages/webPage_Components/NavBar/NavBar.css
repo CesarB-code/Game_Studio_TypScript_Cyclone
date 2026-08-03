@@ -1,0 +1,52 @@
+.bg-grey {
+    background-color: #403c5f;
+}
+
+.nav-link {
+    font-family: fantasy;
+}
+
+.nav-link:hover {
+    color: #F1535d;
+}
+
+#nav-dropdown {
+    font-family: fantasy;
+}
+
+.webHeader {
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    width: auto;
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.webHeader:hover {
+    color: #F1535d;
+    text-shadow: 1px 1px 10px #F1535d;
+}
+
+button.navbar-toggler.collapsed {
+
+    padding-left: 10px;
+
+}
+
+.custom-dropdown .nav-link:hover {
+    color: #F1535d !important;
+
+}
+
+.dropdown-item:hover {
+    color: #F1535d;
+
+}
+
+#label {
+    background-image: url('../../../assets/sufyan-5NrbL6F68V0-unsplash.jpg');
+    background-size: cover;
+}

@@ -1,0 +1,35 @@
+.main-background {
+    background-image: url('../../assets/KomikoAI (7).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 1rem 2rem;
+    min-height: 100vh;
+}
+
+.store-nav-row {
+    margin-bottom: 2rem;
+}
+
+.store-content-row {
+    margin: 0;
+    align-items: stretch;
+}
+
+.store-section-card {
+    height: 100%;
+}
+
+.store-merch-row {
+    margin: 1.5rem 0 0;
+}
+
+.store-merch-card {
+    min-height: 220px;
+}
+
+@media (max-width: 991px) {
+    .store-merch-row {
+        margin-top: 1rem;
+    }
+}

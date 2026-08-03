@@ -1,0 +1,152 @@
+.ProfileImg {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f2a3a8;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Profile-container {
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-image: url('../../assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+.profile-shell {
+    padding: 1rem 0 2rem;
+}
+
+.profile-card {
+    background: rgba(8, 14, 24, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+}
+
+.profile-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(242, 163, 168, 0.16);
+    color: #f8d9db;
+    font-size: 0.9rem;
+}
+
+.profile-intro {
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.profile-subtitle {
+    color: #f8d9db;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+}
+
+.profile-bio {
+    color: #e6ecf2;
+    max-width: 620px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.profile-grid {
+    margin-top: 2rem;
+}
+
+.profile-panel {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 1.25rem;
+    height: 100%;
+}
+
+.profile-panel-title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+.profile-row-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.profile-row-label {
+    color: #f2a3a8;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.profile-row-value {
+    color: white;
+    font-size: 1rem;
+}
+
+.profile-edit-btn {
+    border: none;
+    background: rgba(242, 163, 168, 0.2);
+    color: white;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.profile-edit-btn:hover {
+    background: #f1535d;
+}
+
+@media (max-width: 767px) {
+    .profile-card {
+        padding: 1.25rem;
+    }
+
+    .profile-intro {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .profile-bio {
+        margin: 0 auto;
+    }
+}

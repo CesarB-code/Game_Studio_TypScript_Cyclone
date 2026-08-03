@@ -1,0 +1,54 @@
+.about-page {
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.about-nav-row {
+    width: 100%;
+}
+
+.about-content-row {
+    width: 100vw;
+    min-height: 60%;
+    color: white;
+    font-family: fantasy;
+    padding: 60px 1rem 10px;
+}
+
+.about-grid {
+    width: 100%;
+    margin: 0;
+}
+
+.about-card {
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.about-footer-row {
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#text {
+    color: white;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.about-card h3 {
+    text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width: 767px) {
+    .about-content-row {
+        padding-top: 2rem;
+    }
+
+    .about-footer-row {
+        padding-top: 3rem;
+    }
+}

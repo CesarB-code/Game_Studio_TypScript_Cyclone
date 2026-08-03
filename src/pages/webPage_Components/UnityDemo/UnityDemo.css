@@ -1,0 +1,35 @@
+.unity-demo-card {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+}
+
+.unity-demo-visual-col {
+    display: flex;
+    justify-content: center;
+}
+
+.unity-demo-visual-card {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.unity-demo-copy {
+    padding-top: 0;
+}
+
+.title {
+    color: white;
+    font-family: fantasy;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.text {
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: 1.6;
+}

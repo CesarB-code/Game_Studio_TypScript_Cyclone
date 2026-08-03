@@ -1,0 +1,82 @@
+.mainElement {
+
+    width: 100%
+}
+
+.body {
+    font-family: Trebuchet MS, sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.title {
+    font-family: fantasy;
+    color: white;
+}
+
+.carousel {
+    background-color: '#403053';
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+
+}
+
+.carousel-img {
+    height: clamp(250px, 50vh, 700px);
+    ;
+    width: 60%;
+
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    object-fit: fill;
+}
+
+#cardRow {
+    border-color: white;
+    border-width: 5px;
+    height: 100%;
+    border-style: solid;
+    padding: 0px;
+    margin: 0px;
+}
+
+#cardRow:hover {
+    border-color: #F1535d;
+    border-width: 5px;
+    border-style: solid;
+    transition: 0.3s;
+}
+
+.carousel.slide {
+    height: 100%;
+    margin-bottom: 0%;
+
+}
+
+.carousel-indicators {
+    margin: 0%;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.carousel-inner {
+
+    height: 100%;
+}
+
+.carousel-item {
+
+    height: 100%;
+}
+
+#GameTitle {
+    height: 20%;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 0px;
+}
