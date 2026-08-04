@@ -1,7 +1,7 @@
 .unity-demo-card {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffffff;
     width: 100%;
 }
 
@@ -19,6 +19,30 @@
 
 .unity-demo-copy {
     padding-top: 0;
+    max-height: 280px;
+    overflow-y: scroll;
+    scrollbar-color: #F2a3a8 transparent;
+}
+
+.unity-demo-copy::-webkit-scrollbar {
+    width: 8px;
+}
+
+.unity-demo-copy::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.unity-demo-copy::-webkit-scrollbar-thumb {
+    overflow-y: scroll;
+    overflow-d: scroll;
+    background-color: #F2a3a8;
+    border-radius: 999px;
+    min-height: 28px;
+}
+
+.unity-demo-copy::-webkit-scrollbar-thumb:hover,
+.unity-demo-copy::-webkit-scrollbar-thumb:active {
+    background-color: #F2a3a8;
 }
 
 .title {
