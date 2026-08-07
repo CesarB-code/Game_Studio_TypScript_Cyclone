@@ -1,0 +1,77 @@
+#Card {
+    width: 100%;
+    max-width: 280px;
+    border: 5px solid #F2a3a8;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s ease;
+    margin: 0 auto;
+}
+
+#Card:hover {
+    border: 5px solid #F1535d;
+    transition: 0.3s;
+}
+
+#animeProfile {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 992px) {
+    #Card {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Card {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    #Card {
+        max-width: 140px;
+    }
+}
+
+#teamMemberRow {
+    margin-top: 50px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 50px;
+    font-style: fantasy;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#TeamMemberDescription {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.team-members-page {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: black;
+    height: 100%;
+}
+
+.team-members-title {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    margin-left: 0;
+    text-shadow: 2px 2px 4px black;
+}

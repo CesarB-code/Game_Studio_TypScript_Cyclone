@@ -6,7 +6,7 @@ import {
     CardBody
 } from 'react-bootstrap';
 import BoilderPlate from '../webPage_Components/NavBar/NavBar';
-import './TeamnMembers.css'
+import './TeamMembers.css'
 import AnimeLatina from '../../assets/KomikoAI.png'
 import latina from '../../assets/photo-1524502397800-2eeaad7c3fe5.avif'
 import AnimeEuroFemale from "../../assets/KomikoAI (2).png";
