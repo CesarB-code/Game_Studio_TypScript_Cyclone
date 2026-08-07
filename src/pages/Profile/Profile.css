@@ -8,12 +8,12 @@
 }
 
 .Profile-container {
-    min-height: 100vh;
+
     padding-top: 70px;
     padding-bottom: 40px;
     background-image: url('../../assets/jase-bloor-oCZHIa1D4EU-unsplash.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 #root {

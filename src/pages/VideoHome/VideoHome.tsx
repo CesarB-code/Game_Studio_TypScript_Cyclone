@@ -45,7 +45,7 @@ function VideoHome() {
   return (
 
 
-    <Container fluid style={{ overflowX: 'hidden', overflowY: 'scroll', backgroundImage: `url(${overlayImage})` }} >
+    <Container fluid style={{ width: '100vw', overflowX: 'hidden', overflowY: 'scroll', backgroundImage: `url(${overlayImage})` }} >
       <BoilerPlate />
       <Row style={{ marginTop: '60px' }}><h1 id="NewsTitle" className="video-home-title">Cyclone</h1></Row>
 
