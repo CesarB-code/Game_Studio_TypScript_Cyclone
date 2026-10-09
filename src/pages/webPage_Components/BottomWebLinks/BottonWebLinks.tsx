@@ -4,7 +4,7 @@ import {
     Container
 } from 'react-bootstrap';
 
-import MyImage3 from '/Users/cesarbarrera/Documents/GitHub/Game_Studio_Website/src/components/pages/assets/sufyan-5NrbL6F68V0-unsplash.jpg';
+import MyImage3 from '../../../assets/sufyan-5NrbL6F68V0-unsplash.jpg';
 import { RiTiktokLine } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiYoutube } from "react-icons/ci";

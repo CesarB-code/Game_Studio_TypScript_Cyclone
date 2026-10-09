@@ -10,7 +10,7 @@ import {
 } from 'react-bootstrap';
 import { useState } from "react";
 import { BsFan } from "react-icons/bs";
-import '/src/pages/webPage_Components/NavBar/NavBar.css'
+import './NavBar.css'
 function BoilerPlate() {
     const [isDropped, setIsDropped] = useState(false);
     return (

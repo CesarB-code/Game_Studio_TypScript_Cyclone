@@ -4,7 +4,7 @@ import Events from '../pages/Events/Events';
 import Profile from '../pages/Profile/Profile';
 import TeamMembers from '../pages/TeamMember/TeamMembers';
 import Store from '../pages/Store/Store';
-import About from '/Users/cesarbarrera/Documents/GitHub/Game_Studio_TypScript_Cyclone/src/pages/About/About.tsx';
+import About from '../pages/About/About';
 
 function AppRoutes() {
     return (

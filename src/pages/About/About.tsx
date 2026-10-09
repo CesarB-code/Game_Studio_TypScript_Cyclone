@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
-import BottomWebLinks from '/Users/cesarbarrera/Documents/GitHub/Game_Studio_TypScript_Cyclone/src/pages/webPage_Components/BottomWebLinks/BottonWebLinks.tsx';
-import BoilerPlate from '/Users/cesarbarrera/Documents/GitHub/Game_Studio_TypScript_Cyclone/src/pages/webPage_Components/NavBar/NavBar.tsx';
+import BottomWebLinks from '../webPage_Components/BottomWebLinks/BottonWebLinks';
+import BoilerPlate from '../webPage_Components/NavBar/NavBar';
 import './About.css';
 
 function About() {

@@ -23,7 +23,7 @@
 }
 
 .footer-hero {
-    background-image: url('/Users/cesarbarrera/Documents/GitHub/Game_Studio_Website/src/components/pages/assets/sufyan-5NrbL6F68V0-unsplash.jpg');
+    background-image: url('../../../assets/sufyan-5NrbL6F68V0-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
