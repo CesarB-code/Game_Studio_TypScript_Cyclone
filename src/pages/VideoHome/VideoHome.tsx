@@ -13,7 +13,7 @@ import './VideoHome.css';
 import AISoftware from '../webPage_Components/AISoftware/AiSoftware';
 import UnityDemo from '../webPage_Components/UnityDemo/UnityDemo';
 import overlayImage from '../../assets/takashi-miyazaki-64ajtpEzlYc-unsplash.jpg';
-
+import '../../index.css';
 function VideoHome() {
   const canvasRef1 = useRef(null);
   const [unityInstance1, setUnityInstance1] = useState(null);
