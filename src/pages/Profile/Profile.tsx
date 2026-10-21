@@ -1,10 +1,65 @@
 import { Row, Col, Container } from 'react-bootstrap';
+import { useEffect, useRef } from 'react';
 import { GoPencil } from 'react-icons/go';
 import BoilerPlate from '../webPage_Components/NavBar/NavBar';
 import ProfileImage from '../../assets/istockphoto-828763406-1024x1024.jpg';
+import pixiTextureUrl from '../../assets/from-PixAI-2067286588558916448-0.png';
 import './Profile.css';
+import { Application, Assets, Sprite } from 'pixi.js';
+import {Application as Appl,} from '@pixi/react';
+
+
+
+async function initPixi(target: HTMLDivElement) {
+    const app = new Application();
+    await app.init({
+        width: 200,
+        height: 200,
+        backgroundColor: 0x1099bb,
+        antialias: true,
+    });
+
+    const texture = await Assets.load(pixiTextureUrl);
+    const sprite = new Sprite(texture);
+    sprite.anchor.set(0.5);
+    sprite.position.set(100, 100);
+    sprite.scale.set(0.1);
+    sprite.width= 200;
+    sprite.height = 200;
+    app.stage.addChild(sprite);
+    target.appendChild(app.canvas);
+
+    return app;
+}
 
 function Profile() {
+    const pixiContainer = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const target = pixiContainer.current;
+        if (!target) return;
+
+        let app: Application | null = null;
+        let cancelled = false;
+
+        initPixi(target)
+            .then((initializedApp) => {
+                if (cancelled) {
+                    initializedApp.destroy({ removeView: true }, { children: true });
+                    return;
+                }
+                app = initializedApp;
+            })
+            .catch((error: unknown) => {
+                console.error('Failed to initialize Pixi scene:', error);
+            });
+
+        return () => {
+            cancelled = true;
+            app?.destroy({ removeView: true }, { children: true });
+        };
+    }, []);
+
     const accountDetails = [
         { label: 'Username', value: 'Fenrir' },
         { label: 'Full Name', value: 'John Doe' },
@@ -22,7 +77,7 @@ function Profile() {
     return (
         <Container className="Profile-container" fluid>
             <BoilerPlate />
-
+            <Row><Col><svg width="200" height="200"><circle cx="100" cy="100" r="100" fill="blue"></circle></svg></Col><Col><div ref={pixiContainer} /></Col></Row>
             <Row style={{ marginTop: '60px' }}><h1 id="ProfileTitle" style={{
                 height: '100%',
                 color: 'white',
