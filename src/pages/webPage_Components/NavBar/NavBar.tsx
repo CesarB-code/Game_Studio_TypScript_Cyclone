@@ -17,7 +17,7 @@ function BoilerPlate({ fixed = true }: { fixed?: boolean }) {
     return (
 
 
-<Navbar id='custom-navbar' expand="lg" className="bg-grey " fixed={fixed ? 'top' : undefined} data-bs-theme="dark" style={{ padding: '0px', margin: 0 }} >
+<Navbar id='custom-navbar' expand="xl" className="bg-grey " fixed={fixed ? 'top' : undefined} data-bs-theme="dark" style={{ padding: '0px', margin: 0 }} >
 
             <Navbar.Brand href="/home" className="webHeader" style={{ fontFamily: 'fantasy' }}  >
                 <Row >
