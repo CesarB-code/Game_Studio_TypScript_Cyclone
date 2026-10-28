@@ -73,11 +73,13 @@ function Profile() {
         { label: 'Shipping Address', value: '777 Luca Street' },
         { label: 'Payment Method', value: 'Credit Card' }
     ];
-
+const pathData:string = ' M 0 150 L 250 150 L 50 150 Z ';
     return (
-        <Container className="Profile-container" fluid>
+        <Container className="Profile-container" fluid style={{ overflowX: 'hidden', overflowY: 'scroll' }}>
             <BoilerPlate />
-            <Row><Col><svg width="200" height="200"><circle cx="100" cy="100" r="100" fill="blue"></circle></svg></Col><Col><div ref={pixiContainer} /></Col></Row>
+            <Row><Col><svg viewBox=' 0 0 300 150' >
+                <path d={pathData} fill="blue" stroke= "blue" strokeWidth={10}></path>
+                </svg></Col><Col><div ref={pixiContainer} /></Col></Row>
             <Row style={{ marginTop: '60px' }}><h1 id="ProfileTitle" style={{
                 height: '100%',
                 color: 'white',

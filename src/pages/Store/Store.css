@@ -1,4 +1,7 @@
 .main-background {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-image: url('../../assets/KomikoAI (7).png');
     background-size: cover;
     background-repeat: no-repeat;

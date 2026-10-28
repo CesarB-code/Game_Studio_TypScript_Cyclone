@@ -16,6 +16,7 @@ import AnimeEuroMale from "../../assets/KomikoAI (6).png"
 import ArabMale from "../../assets/irene-strong-v2aKnjMbP_k-unsplash.jpg";
 import AnimeArabMale from "../../assets/KomikoAI (3).png";
 function TeamMembers() {
+    
     return (
         <Container fluid className="team-members-page">
             <Row>

@@ -43,13 +43,14 @@ function VideoHome() {
 
   // Call the draw function to render the canvas
   return (
-
-
-    <Container fluid style={{ width: '100vw', overflowX: 'hidden', overflowY: 'scroll', backgroundImage: `url(${overlayImage})` }} >
-      <BoilerPlate />
-      <Row style={{ marginTop: '60px' }}><h1 id="NewsTitle" className="video-home-title">Cyclone</h1></Row>
-
+    <Container fluid style={{ width: '100vw' }}>
+      <Row><BoilerPlate  fixed={false}/></Row>
+      <Row style={{ height: '100vh', overflowX: 'hidden', overflowY: 'scroll', backgroundImage: `url(${overlayImage})` }} >
+           
+      <Row style={{ marginTop: '60px' }}>
+<h1 id="NewsTitle" className="video-home-title">Cyclone</h1></Row>
       <Row className='video-Row align-items-center justify-content-center' style={{ backgroundColor: 'transparent', marginBottom: '40px' }}>
+
         <Col className='col-10'>
           <div style={{ color: 'white', textAlign: 'center', padding: '30px' }}>
             <h2 style={{ fontFamily: 'fantasy', fontSize: '32px', marginBottom: '20px', textShadow: '2px 2px 4px black' }}>Welcome to Cyclone Game Studio</h2>
@@ -130,7 +131,8 @@ function VideoHome() {
 
 
 
-    </Container >
+      </Row>
+    </Container>
 
 
 
