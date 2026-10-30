@@ -1,3 +1,16 @@
+.sidebar-column {
+  border: 5px solid grey;
+  background-image: url('../../assets/komiko-33598036.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: border-color 0.2s ease;
+}
+
+.sidebar-column:hover {
+  border-color: #F1535d;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
