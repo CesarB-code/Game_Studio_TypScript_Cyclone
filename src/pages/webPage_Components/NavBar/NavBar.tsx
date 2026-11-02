@@ -43,7 +43,7 @@ function BoilerPlate({ fixed = true }: { fixed?: boolean }) {
                     <Offcanvas.Title>Cyclone</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body style={{ backgroundColor: '#343a40', color: 'white' }}>
-                    <Nav className="justify-content-end pe-3">
+                    <Nav className="flex-row align-items-center justify-content-end gap-2 pe-3" style={{ width: '100%' }}>
                         <Nav.Link href="/home">Home</Nav.Link>
                         <Nav.Link href="/profile">Profile</Nav.Link>
                         <Nav.Link href="/store">Store</Nav.Link>
@@ -51,6 +51,7 @@ function BoilerPlate({ fixed = true }: { fixed?: boolean }) {
                         <NavDropdown
                             title="Company"
                             id="nav-dropdown"
+                            align="end"
                             show={isDropped}
                             onMouseEnter={() => setIsDropped(true)}
                             onMouseLeave={() => setIsDropped(false)}

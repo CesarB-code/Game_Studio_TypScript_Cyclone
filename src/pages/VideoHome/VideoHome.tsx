@@ -23,31 +23,13 @@ function VideoHome() {
 
   useEffect(() => {
     function addMargin(row: any, ele: any) {
-      const currentMargin = parseFloat(getComputedStyle(ele.current).marginRight);
-      const currentWidth = parseFloat(getComputedStyle(ele.current).width);
-      const rowWidth = parseFloat(getComputedStyle(row.current).width);
-      const middleOfRow = rowWidth / 2;
-      const remainderRow = middleOfRow - currentMargin - currentWidth;
-
-      ele.current.style.marginRight =
-        currentMargin + remainderRow >= 0
-          ? `${currentMargin + remainderRow + 100}px`
-          : '20px';
+      if (row.current && ele.current) {
+        ele.current.style.marginRight = 'auto';
+      }
     }
 
-    const updateMargins = () => {
-      addMargin(rowElement, element);
-      addMargin(rowElement2, element2);
-    };
-
-    window.addEventListener('load', updateMargins);
-    window.addEventListener('resize', updateMargins);
-    updateMargins();
-
-    return () => {
-      window.removeEventListener('load', updateMargins);
-      window.removeEventListener('resize', updateMargins);
-    };
+    addMargin(rowElement, element);
+    addMargin(rowElement2, element2);
   }, []);
 
   Interaction.SetState();
@@ -171,7 +153,7 @@ function VideoHome() {
                       </p>
                     </div>
                   </Col>
-                  <Col md={4} className="d-flex">
+                  <Col className="col-4 d-flex">
                     <UnityDemo
                       useRef={canvasRef1}
                       useState={{
