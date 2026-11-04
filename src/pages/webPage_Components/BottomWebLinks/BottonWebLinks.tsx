@@ -22,8 +22,8 @@ function BottomWebLinks() {
         { icon: <RxDiscordLogo />, label: 'Discord' }
     ];
 
-    const companyLinks = ['Careers', 'Events', 'FAQ'];
-    const storeLinks = ['Location', 'Games', 'About', 'Merch'];
+    const companyLinks = ['Careers', 'Events', 'FAQ','Location','Team Members'];
+    const storeLinks = [ 'Games',  'Merch','Software'];
 
     return (
         <Row className='bottomWebPage g-0'>

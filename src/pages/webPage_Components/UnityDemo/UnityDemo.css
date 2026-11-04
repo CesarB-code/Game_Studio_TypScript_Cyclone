@@ -1,8 +1,13 @@
 .unity-demo-card {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid #ffffff;
+    border: 5px solid #ffffff;
     width: 100%;
+    transition: border-color 0.2s ease;
+}
+
+.unity-demo-card:hover {
+    border-color: #F2a3a8;
 }
 
 .unity-demo-visual-col {
@@ -20,8 +25,13 @@
 .unity-demo-copy {
     padding-top: 0;
     max-height: 280px;
+    overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: #F2a3a8 transparent;
+}
+
+.unity-demo-copy .text {
+    font-size: 0.875rem;
 }
 
 .unity-demo-copy::-webkit-scrollbar {
@@ -56,4 +66,9 @@
     color: white;
     font-family: Trebuchet MS, sans-serif;
     line-height: 1.6;
+}
+
+.title,
+.text {
+    text-shadow: 2px 2px 4px black;
 }

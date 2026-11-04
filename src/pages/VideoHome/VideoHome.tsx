@@ -202,7 +202,7 @@ function VideoHome() {
           </Col>
         </Row>
 
-        <Row style={{ height: '450px', width: '100vw', backgroundColor: 'transparent' }}>
+        <Row style={{ height: '450px', width: '100vw', paddingBottom: '50px', backgroundColor: 'transparent' }}>
           <GameList button1="Play Demo" button2="Go To Store " />
         </Row>
       </Row>
