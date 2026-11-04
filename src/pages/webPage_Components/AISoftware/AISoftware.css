@@ -1,6 +1,6 @@
 #cardRow {
     border-color: white;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     transition: border-color 0.3s ease;
     width: 100%;
@@ -12,13 +12,26 @@
 
 #cardRow::-webkit-scrollbar {
     background-color: transparent;
-    height: 10px;
+    height: 3px;
 
 }
 
 #cardRow::-webkit-scrollbar-thumb {
     background-color: #F2a3a8;
-    border-radius: 5px;
+    border-radius: 3px;
+}
+
+.ai-software-card {
+    scrollbar-width: thin;
+    scrollbar-color: #F2a3a8 transparent;
+}
+
+.ai-software-card::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ai-software-card::-webkit-scrollbar-thumb {
+    min-height: 12px;
 }
 
 #ContentRow {

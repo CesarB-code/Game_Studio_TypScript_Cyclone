@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef, useEffect } from 'react';
 import { DrawObject } from '../../../DrawingFunctions/FaceFunctions';
 import {
-    Row, Col, Card, Button,
+    Row, Col, Card, ButtonGroup
 
 
 } from 'react-bootstrap';
@@ -188,7 +188,7 @@ function AISoftware() {
 
     }, []);
     return (
-        <Card id='cardRow' className='w-100 rounded-5 d-flex flex-column p-3 p-md-4'>
+        <Card id='cardRow' className='w-100 rounded-5 d-flex flex-column p-3 p-md-4 ai-software-card'>
             <Row className='mb-3 text-center'>
                 <h1 id='AITitle'>AI Software</h1>
             </Row>
@@ -211,14 +211,13 @@ function AISoftware() {
             </Row>
 
             <Row className='mt-4 justify-content-center w-100'>
-                <Col>
-                    <Button className='rounded-3 h-100 flex-grow-1'>Demo</Button>
-
-                </Col>
-                <Col>
-                    <Button className='rounded-3 h-100 flex-grow-1'>Buy Software</Button>
-
-                </Col>
+                
+                <button type="button" className="btn btn-primary rounded-3 h-100">
+                    Demo
+                </button>
+                <button type="button" className="btn btn-primary rounded-3 h-100">
+                    Preorder
+                </button>
 
             </Row>
         </Card>
