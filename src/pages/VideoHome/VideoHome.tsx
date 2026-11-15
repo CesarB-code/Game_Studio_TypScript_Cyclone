@@ -107,7 +107,41 @@ function VideoHome() {
             </div>
           </Col>
         </Row>
-
+<Row
+          className="video-Row align-items-center justify-content-center"
+          style={{
+            backgroundColor: 'transparent',
+            marginBottom: '30px',
+            marginTop: '40px',
+          }}
+        >
+          <Col className="col-10">
+            <div style={{ color: 'white', textAlign: 'center', padding: '20px' }}>
+              <h2
+                style={{
+                  fontFamily: 'fantasy',
+                  fontSize: '28px',
+                  marginBottom: '15px',
+                  textShadow: '2px 2px 4px black',
+                }}
+              >
+                Explore Our Games
+              </h2>
+              <p
+                style={{
+                  fontSize: '16px',
+                  lineHeight: '1.6',
+                  textShadow: '2px 2px 4px black',
+                }}
+              >
+                Discover our latest titles and experience the future of gaming. Each game in our collection features unique gameplay mechanics, stunning visuals, and our signature adaptive AI system that learns from your playstyle. Browse our full game list below to find your next favorite game.
+              </p>
+            </div>
+          </Col>
+        </Row>
+         <Row style={{ height: '450px', width: '100vw', paddingBottom: '50px', backgroundColor: 'transparent' }}>
+          <GameList button1="Play Demo" button2="Go To Store " />
+        </Row>
         <Row
           className="video-Row align-items-center justify-content-center"
           style={{ backgroundColor: 'transparent' }}
@@ -169,42 +203,9 @@ function VideoHome() {
           </Col>
         </Row>
 
-        <Row
-          className="video-Row align-items-center justify-content-center"
-          style={{
-            backgroundColor: 'transparent',
-            marginBottom: '30px',
-            marginTop: '40px',
-          }}
-        >
-          <Col className="col-10">
-            <div style={{ color: 'white', textAlign: 'center', padding: '20px' }}>
-              <h2
-                style={{
-                  fontFamily: 'fantasy',
-                  fontSize: '28px',
-                  marginBottom: '15px',
-                  textShadow: '2px 2px 4px black',
-                }}
-              >
-                Explore Our Games
-              </h2>
-              <p
-                style={{
-                  fontSize: '16px',
-                  lineHeight: '1.6',
-                  textShadow: '2px 2px 4px black',
-                }}
-              >
-                Discover our latest titles and experience the future of gaming. Each game in our collection features unique gameplay mechanics, stunning visuals, and our signature adaptive AI system that learns from your playstyle. Browse our full game list below to find your next favorite game.
-              </p>
-            </div>
-          </Col>
-        </Row>
+        
 
-        <Row style={{ height: '450px', width: '100vw', paddingBottom: '50px', backgroundColor: 'transparent' }}>
-          <GameList button1="Play Demo" button2="Go To Store " />
-        </Row>
+       
       </Row>
       </Col>
       </Row>

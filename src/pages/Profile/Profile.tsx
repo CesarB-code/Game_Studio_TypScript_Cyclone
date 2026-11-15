@@ -7,6 +7,7 @@ import pixiTextureUrl from '../../assets/from-PixAI-2067286588558916448-0.png';
 import './Profile.css';
 import { Application, Assets, Sprite } from 'pixi.js';
 import {Application as Appl,} from '@pixi/react';
+import Sparke from '../../SVG_Animmation/Sparke';
 
 
 
@@ -79,7 +80,9 @@ const pathData:string = ' M 0 150 L 250 150 L 50 150 Z ';
             <BoilerPlate />
             <Row><Col><svg viewBox=' 0 0 300 150' >
                 <path d={pathData} fill="blue" stroke= "blue" strokeWidth={10}></path>
-                </svg></Col><Col><div ref={pixiContainer} /></Col></Row>
+                </svg></Col><Col><div ref={pixiContainer} /></Col>
+                <Col><Sparke /></Col>
+                </Row>
             <Row style={{ marginTop: '60px' }}><h1 id="ProfileTitle" style={{
                 height: '100%',
                 color: 'white',

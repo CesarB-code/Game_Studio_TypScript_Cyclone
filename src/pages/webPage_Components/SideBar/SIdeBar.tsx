@@ -8,7 +8,8 @@ function StackedExample() {
       <Nav.Link href="/home">Store</Nav.Link>
       <Nav.Link href="/events" >Events</Nav.Link>
       <Nav.Link href="/about">Company</Nav.Link>
-      
+     <Nav.Link href="/teamMembers">Team Members</Nav.Link>
+
     </Nav></Row>
     
   );
