@@ -7,8 +7,8 @@ import pixiTextureUrl from '../../assets/from-PixAI-2067286588558916448-0.png';
 import './Profile.css';
 import { Application, Assets, Sprite } from 'pixi.js';
 import {Application as Appl,} from '@pixi/react';
-import Sparke from '../../SVG_Animmation/Sparke';
-
+import Sparke from '../../SVG_Animmation/Sparke/Sparke.tsx';
+import Hand from'../../SVG_Animmation/Hand/Hand.tsx'
 
 
 async function initPixi(target: HTMLDivElement) {
@@ -82,6 +82,7 @@ const pathData:string = ' M 0 150 L 250 150 L 50 150 Z ';
                 <path d={pathData} fill="blue" stroke= "blue" strokeWidth={10}></path>
                 </svg></Col><Col><div ref={pixiContainer} /></Col>
                 <Col><Sparke /></Col>
+                <Col><Hand/></Col>
                 </Row>
             <Row style={{ marginTop: '60px' }}><h1 id="ProfileTitle" style={{
                 height: '100%',
