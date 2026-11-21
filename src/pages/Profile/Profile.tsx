@@ -6,10 +6,9 @@ import ProfileImage from '../../assets/istockphoto-828763406-1024x1024.jpg';
 import pixiTextureUrl from '../../assets/from-PixAI-2067286588558916448-0.png';
 import './Profile.css';
 import { Application, Assets, Sprite } from 'pixi.js';
-import {Application as Appl,} from '@pixi/react';
 import Sparke from '../../SVG_Animmation/Sparke/Sparke.tsx';
 import Hand from'../../SVG_Animmation/Hand/Hand.tsx'
-
+import Construction from '../../SVG_Animmation/SVGDrawingFunc/Construction/Construction.tsx';
 
 async function initPixi(target: HTMLDivElement) {
     const app = new Application();
@@ -74,6 +73,16 @@ function Profile() {
         { label: 'Shipping Address', value: '777 Luca Street' },
         { label: 'Payment Method', value: 'Credit Card' }
     ];
+    const handDetails = [
+                { stroke: 'path',color: '#f3c7a5', cordinates: 'M74 205 C68 191 64 174 59 158 L45 132 C40 123 44 114 52 111 C60 108 66 113 70 121 L83 145 L76 75 C75 64 81 58 89 58 C98 58 103 64 104 74 L109 129 L109 47 C109 36 115 30 123 30 C132 30 138 36 138 47 L139 128 L147 65 C148 54 154 49 162 50 C171 51 176 58 175 68 L168 136 L180 99 C183 89 191 86 198 90 C206 94 207 101 203 111 L184 163 C178 182 166 197 149 205 Z' },
+
+        { stroke: 'path', color: 'black', cordinates: 'M83 94 C89 90 97 90 103 94' },
+        { stroke: 'path', color: 'green', cordinates: 'M110 76 C118 72 129 72 137 76' },
+        { stroke: 'path', color: 'red', cordinates: 'M143 88 C150 84 160 85 167 90' },
+        { stroke: 'path', color: 'red', cordinates: 'M88 157 C101 150 115 152 125 160' },
+        { stroke: 'path', color: 'red', cordinates: 'M133 159 C145 153 158 156 166 165' },
+
+    ];
 const pathData:string = ' M 0 150 L 250 150 L 50 150 Z ';
     return (
         <Container className="Profile-container" fluid style={{ overflowX: 'hidden', overflowY: 'scroll' }}>
@@ -83,6 +92,7 @@ const pathData:string = ' M 0 150 L 250 150 L 50 150 Z ';
                 </svg></Col><Col><div ref={pixiContainer} /></Col>
                 <Col><Sparke /></Col>
                 <Col><Hand/></Col>
+                <Col><svg viewBox='0 0 200 200'>{Construction(handDetails)}</svg></Col>
                 </Row>
             <Row style={{ marginTop: '60px' }}><h1 id="ProfileTitle" style={{
                 height: '100%',

@@ -1,9 +1,28 @@
-function Construction() {
+function Construction(outline:{stroke:string; color:string; cordinates: string}[]) {
+    
+    
+    
+    
+    
     return (
-        <svg viewBox="0 0 100 100" role="img" aria-labelledby="construction-title">
-            <title id="construction-title">Construction drawing</title>
-        </svg>
+       outline.map((item) => PathConstruction(item))  
     );
 }
-
+function PathConstruction(item:{stroke:string; color:string; cordinates: string}) {
+    if(item.stroke=="path"){
+    return (
+        <path key={item.cordinates} fill={item.color} d={item.cordinates} />
+    );
+}
+   else if(item.stroke=="polygon")
+   {
+    return (
+        <polygon key={item.cordinates}  points={item.cordinates} />
+    );
+   }
+   else{
+    return null;
+   }
+}
 export default Construction;
+    
