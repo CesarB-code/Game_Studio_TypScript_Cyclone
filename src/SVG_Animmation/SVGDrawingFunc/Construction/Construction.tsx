@@ -1,4 +1,4 @@
-function Construction(outline:{stroke:string; color:string; cordinates: string}[]) {
+function Construction(outline:{stroke:string;opacity:string; color:string; cordinates: string}[]) {
     
     
     
@@ -8,10 +8,10 @@ function Construction(outline:{stroke:string; color:string; cordinates: string}[
        outline.map((item) => PathConstruction(item))  
     );
 }
-function PathConstruction(item:{stroke:string; color:string; cordinates: string}) {
+function PathConstruction(item:{stroke:string; opacity:string; color:string; cordinates: string}) {
     if(item.stroke=="path"){
     return (
-        <path key={item.cordinates} fill={item.color} d={item.cordinates} />
+        <path key={item.cordinates} fill={item.color} fillOpacity={item.opacity} d={item.cordinates} />
     );
 }
    else if(item.stroke=="polygon")
