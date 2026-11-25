@@ -30,14 +30,21 @@ function Hand() {
 				>
 
 				</polygon>
-<path stroke="white" d="M 20,36 C 16,36, 20,4 20,12"></path>
+					<polygon
+				fill="#f3c7a5"
+				stroke="#f3c7a5"
+				points="12,52 14,68 34,68  36,52 "
 
-				<path d="M83 94 C89 90 97 90 103 94" />
-				<path d="M110 76 C118 72 129 72 137 76" />
-				<path d="M143 88 C150 84 160 85 167 90" />
-				<path d="M88 157 C101 150 115 152 125 160" />
-				<path d="M133 159 C145 153 158 156 166 165" />
-			</g>
+				>
+
+				</polygon>
+				<path stroke="white"stroke-width="2" d="M 16,36.3 C 12,36, 12,4 12.3,16.4"></path>
+
+<path stroke="white"stroke-width="2" d="M 20,36 C 16,36, 20,4 20,12"></path>
+<path stroke="white" stroke-width="2" d="M 28,36 C 30,36, 36,20 28,12"></path>
+<path stroke="white" stroke-width="2" d="M 36,36 C 36,36, 40,20 36,12"></path>
+
+				</g>
 		</svg>
 	);
 }
